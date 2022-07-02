@@ -1,0 +1,49 @@
+.navWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:2rem;
+  border-bottom:1px solid #ece5e5; 
+  margin:.2rem;
+}
+.heroText{
+    margin-left:8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroText > img {
+    padding-right: .5rem;
+}
+.iconWrapper{
+    margin-right:8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.iconWrapper > *{
+    padding:0 .5rem;
+}
+@media only screen and (max-width:768px){
+.navWrapper{
+    flex-direction: row-reverse;
+}
+.heroText{
+   margin-left: 0;
+   white-space: nowrap;
+  position: absolute;
+  left: 2rem;
+}
+.iconWrapper{
+    margin-right:0;
+    position: absolute;
+
+    left: 0;
+
+ 
+}
+.searchIcon{
+    display: none;
+}
+}

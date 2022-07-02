@@ -1,0 +1,39 @@
+.container{
+    padding:0 6.5rem 2rem 6.5rem;
+}
+.header{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+input[type = "radio"]{
+display: none;
+}
+.category{
+    list-style: none;
+    display: inline-block;
+    padding:.5rem;
+    background-color: #EFF2F5;;
+    margin:1rem .5rem;
+    border-radius: 8px;
+}
+.categoryWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category :hover{
+color:blue;
+cursor: pointer;
+}
+input[type="radio"]:checked+label {
+   color:blue;
+  }
+
+  @media only screen and (max-width:768px){
+    .categoryWrapper{
+        display: none;
+    }
+    .container{
+        padding:0 1.5rem 0 .5rem;
+    }
+  }

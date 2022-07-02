@@ -1,0 +1,38 @@
+.thead {
+  width: 85vw;
+  padding: 0.5rem 0;
+}
+th,
+td {
+  padding: 0.5rem 1.1rem;
+  border-bottom: 1px solid #eff2f5;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.starLogo {
+  margin-right: 1rem;
+}
+.tData {
+  margin-right: 1rem;
+}
+.priceChangePer{
+  color:var(--color-danger)
+}
+.priceChangePer7D{
+  color:var(--color-success)
+}
+@media only screen and (max-width: 768px) {
+  .getMoreData {
+    display: none;
+  }
+  .starLogo {
+    margin-right: 0.1rem;
+  }
+}

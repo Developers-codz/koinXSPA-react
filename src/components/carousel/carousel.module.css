@@ -1,0 +1,57 @@
+.carouselWrapper,.container,.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carouselWrapper{
+   min-height: 10.125rem;
+}
+.container{
+    width:90vw;
+    position: relative;
+}
+.container > i {
+    border-radius: 50%;
+    padding:.5rem .6rem;
+    background-color: rgba(208, 214, 227, 0.3);
+    z-index:1;
+}
+.leftBtn{
+position: absolute;
+left:0
+}
+.rightBtn{
+position: absolute;
+right:0
+}
+.card{
+width: 20rem;
+height: 8rem;
+box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
+border-radius: 12px;
+margin:0 .5rem;
+}
+.textArea{
+    align-self: flex-start;
+    padding:1.5rem 1rem 1rem 1.2rem;
+}
+.textArea > *{
+    margin-bottom: .2rem;
+}
+@media only screen and (max-width:768px){
+    .card{
+        width:80vw;
+        position:absolute;
+    }
+    .dataActive {
+        opacity: 1;
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 100ms;
+      }
+      .container{
+        width:100vw;
+      }
+      .dataInactive {
+        opacity: 0
+      }
+}

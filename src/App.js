@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useEffect } from "react";
+import "./App.css";
+import { Navbar, Carousel, Main } from "./components";
+import { Modal } from "./components/modal/Modal";
+import { useCurrency } from "./context/currencyContext";
+import { useModal } from "./context/modalContext";
 function App() {
+  const { getCurrencyData } = useCurrency();
+  const { isModalOpen } = useModal();
+  useEffect(() => {
+    getCurrencyData();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {isModalOpen && <Modal />}
+      <div
+        className="App"
+      >
+        <div style={
+          isModalOpen
+            ? { 
+              opacity: 0.3 ,pointerEvents: "none" }
+            : {  pointerEvents: "auto",
+            opacity: 1 }
+        }>
+        <Navbar />
+        <Carousel />
+        <Main />
+        </div>
+      </div>
+    </>
   );
 }
 
