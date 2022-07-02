@@ -12,7 +12,7 @@
         height:50vh;
         background-color:white !important;
         border-radius: 8px;
-        box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
+        box-shadow: 0px 1.47737px 17.7284px 4.43211px var(--color-dark-300);
         z-index: 3;
     }
     .header{
@@ -49,13 +49,13 @@
         margin-top:.4rem;
         width:10rem;
         height:.5rem;
-        background-color: #f1f3f7;
+        background-color:var(--color-light-100);
         border-radius: 8px;
       }
       .status{
         width:80%;
         height: .5rem;
-        background-color: #CFD6E4;
+        background-color: var(--color-light-300);
         border-radius: 8px;
       }
 }

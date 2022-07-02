@@ -13,7 +13,7 @@
 .container > i {
     border-radius: 50%;
     padding:.5rem .6rem;
-    background-color: rgba(208, 214, 227, 0.3);
+    background-color: var(--color-dark-300);
     z-index:1;
 }
 .leftBtn{
@@ -27,7 +27,7 @@ right:0
 .card{
 width: 20rem;
 height: 8rem;
-box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
+box-shadow: 0px 1.47737px 17.7284px 4.43211px var(--color-dark-300);
 border-radius: 12px;
 margin:0 .5rem;
 }

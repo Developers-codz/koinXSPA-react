@@ -11,5 +11,9 @@
 :root{
   --color-success : green;
   --color-danger:red;
+  --color-dark-300: rgba(208, 214, 227, 0.3);
+  --color-light-200:#eff2f5;
+  --color-light-100:#f1f3f7;
+  --color-light-300:#CFD6E4
 }
 

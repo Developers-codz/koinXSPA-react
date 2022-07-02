@@ -5,7 +5,7 @@
 th,
 td {
   padding: 0.7rem 1rem;
-  border-bottom: 1px solid #eff2f5;
+  border-bottom: 1px solid var(--color-light-200);
 }
 .name {
   display: flex;
@@ -36,13 +36,13 @@ td {
   margin-top:.4rem;
   width:10rem;
   height:.5rem;
-  background-color: #f1f3f7;
+  background-color: var(--color-light-100);
   border-radius: 8px;
 }
 .status{
   width:80%;
   height: .5rem;
-  background-color: #CFD6E4;
+  background-color:var(--color-light-300);
   border-radius: 8px;
 }
 @media only screen and (max-width: 768px) {
@@ -55,6 +55,6 @@ td {
   th,
   td {
     padding: 0.7rem .8rem;
-    border-bottom: 1px solid #eff2f5;
+    border-bottom: 1px solid var(--color-light-200);
   }
 }

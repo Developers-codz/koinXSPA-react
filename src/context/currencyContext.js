@@ -13,14 +13,12 @@ const CurrencyProvider = ({children}) =>{
               const response = await axios.get(
                 `https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=${num}&sparkline=false&price_change_percentage=24h%2C7d`
               );
-              console.log(response.data);
               setCurrencyData(response.data);
             }
             else{
               const response = await axios.get(
                 `https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=10&page=${num}&sparkline=false&price_change_percentage=24h%2C7d`
               );
-              console.log(response.data);
               setCurrencyData(response.data);
             }
           } catch (err) {

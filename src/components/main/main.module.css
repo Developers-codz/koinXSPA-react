@@ -12,7 +12,7 @@ display: none;
     list-style: none;
     display: inline-block;
     padding:.5rem;
-    background-color: #EFF2F5;;
+    background-color: var();
     margin:1rem .5rem;
     border-radius: 8px;
 }
