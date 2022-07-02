@@ -21,9 +21,15 @@
         align-items: center;
         height:4rem;
     }
-    .tHead,.tData{
+    .tHead,.tData,.tData7D,.tData24H{
         padding:.4rem 2rem;
         border:none;
+    }
+    .tData7D{
+        color:var(--color-success)
+    }
+    .tData24H{
+        color:var(--color-danger)
     }
     .header > * {
         padding:.5rem 1rem;
