@@ -8,7 +8,7 @@ const {isLoading,currencyData} = useCurrency()
 
   return(
     <>
-     {isLoading ? <div>loading....</div> : 
+     {isLoading ? <div className={styles.loader}>loading....</div> : 
     <table>
   <tr className={styles.thead}>
     <th  className={styles.getMoreData}>#</th>
