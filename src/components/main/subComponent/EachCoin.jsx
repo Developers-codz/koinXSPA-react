@@ -32,7 +32,11 @@ export const EachCoin = ({ data, sNo }) => {
       </td>
       <td className={styles.getMoreData}>${data?.market_cap}</td>
       <td className={styles.getMoreData}>${data?.total_volume}</td>
-      <td className={styles.getMoreData}>{data?.circulating_supply}BTC</td>
+      <td className={styles.getMoreData}>{data?.circulating_supply}BTC
+      <div className={styles.statusBar}>
+        <div className={styles.status}></div>
+      </div>
+      </td>
       <td className={styles.getMoreData}><i className="fa fa-ellipsis-v" aria-hidden="true"></i></td>
     </tr>
   );

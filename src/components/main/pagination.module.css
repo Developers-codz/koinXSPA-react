@@ -1,0 +1,21 @@
+.pagination{
+    margin: 1rem 0 0 0;
+     font-size: 1rem;
+     list-style: none;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     cursor:pointer;
+     margin:1rem;
+ }
+ 
+ .pageLink{
+     color:black;
+     padding:.6rem;
+     
+ }
+ .pageItem{
+     cursor: pointer;
+     border: 1px solid rgb(148, 148, 235);
+     padding:.2rem;
+ }

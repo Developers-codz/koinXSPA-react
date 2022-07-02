@@ -36,7 +36,7 @@ export const Modal = () => {
           <th className={styles.tHead}>MARKET CAP</th>
         </tr>
         <tr>
-          <td className={styles.tData}>{modalData?.market_cap}</td>
+          <td className={styles.tData}>${modalData?.market_cap}</td>
         </tr>
       </table>
       <table>
@@ -44,7 +44,7 @@ export const Modal = () => {
           <th className={styles.tHead}>VOLUME 24H</th>
         </tr>
         <tr>
-         <td className={styles.tData}> {modalData?.total_volume}</td>
+         <td className={styles.tData}>${modalData?.total_volume}</td>
         </tr>
       </table>
       <table>
@@ -52,7 +52,7 @@ export const Modal = () => {
           <th className={styles.tHead}>CIRCULATORY SUPPLY</th>
         </tr>
         <tr>
-        <td className={styles.tData}>  {modalData?.circulating_supply}</td>
+        <td className={styles.tData}>  {modalData?.circulating_supply}BTC</td>
         </tr>
       </table>
     </div>

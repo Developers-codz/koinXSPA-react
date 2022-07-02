@@ -10,6 +10,7 @@ td {
 .name {
   display: flex;
   align-items: center;
+  padding: 1.1rem 1rem;
 }
 .logo {
   width: 20px;
@@ -30,6 +31,19 @@ td {
 }
 .priceChangePer7D{
   color:var(--color-success)
+}
+.statusBar{
+  margin-top:.4rem;
+  width:10rem;
+  height:.5rem;
+  background-color: #f1f3f7;
+  border-radius: 8px;
+}
+.status{
+  width:80%;
+  height: .5rem;
+  background-color: #CFD6E4;
+  border-radius: 8px;
 }
 @media only screen and (max-width: 768px) {
   .getMoreData {
