@@ -12,7 +12,7 @@ export const EachCoin = ({ data, sNo }) => {
         setOpen(true);
       }}
     >
-      <td className={styles.sNo}>
+      <td className={`${styles.sNo} ${styles.getMoreData}`}>
         <i className={`far fa-star ${styles.starLogo}`}></i>
         <span>{sNo + 1}</span>
       </td>
@@ -22,17 +22,18 @@ export const EachCoin = ({ data, sNo }) => {
         <span>{data?.symbol?.toUpperCase()}</span>
       </td>
       <td>{data?.current_price}</td>
-      <td className={`${styles.getMoreData} ${styles.priceChangePer}`}>
-      <i class="fa fa-caret-down" aria-hidden="true"></i>
+      <td className={styles.priceChangePer}>
+      <i className="fa fa-caret-down" aria-hidden="true"></i>
         {data?.price_change_percentage_24h?.toFixed(2)}%
       </td>
       <td className={`${styles.getMoreData} ${styles.priceChangePer7D}`}>
-      <i class="fa fa-caret-up" aria-hidden="true"></i>
+      <i className="fa fa-caret-up" aria-hidden="true"></i>
         {data?.price_change_percentage_7d_in_currency?.toFixed(2)}%
       </td>
       <td className={styles.getMoreData}>${data?.market_cap}</td>
       <td className={styles.getMoreData}>${data?.total_volume}</td>
       <td className={styles.getMoreData}>{data?.circulating_supply}BTC</td>
+      <td className={styles.getMoreData}><i className="fa fa-ellipsis-v" aria-hidden="true"></i></td>
     </tr>
   );
 };

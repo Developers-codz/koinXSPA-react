@@ -4,7 +4,7 @@
 }
 th,
 td {
-  padding: 0.5rem 1.1rem;
+  padding: 0.7rem 1rem;
   border-bottom: 1px solid #eff2f5;
 }
 .name {
@@ -21,6 +21,9 @@ td {
 }
 .tData {
   margin-right: 1rem;
+}
+.getMoreData > i{
+  padding-right:.1rem
 }
 .priceChangePer{
   color:var(--color-danger)

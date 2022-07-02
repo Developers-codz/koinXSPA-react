@@ -11,10 +11,10 @@ const {isLoading,currencyData} = useCurrency()
      {isLoading ? <div>loading....</div> : 
     <table>
   <tr className={styles.thead}>
-    <th>#</th>
+    <th  className={styles.getMoreData}>#</th>
     <th>NAME</th>
     <th>PRICE</th>
-    <th  className={styles.getMoreData}>
+    <th>
       24H<i className="fa fa-arrow-down"></i>
     </th>
     <th  className={styles.getMoreData}>7D</th>
