@@ -38,4 +38,8 @@ td {
   .starLogo {
     margin-right: 0.1rem;
   }
+  td {
+    padding: 0.7rem .8rem;
+    border-bottom: 1px solid #eff2f5;
+  }
 }
