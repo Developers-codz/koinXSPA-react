@@ -4,11 +4,13 @@ import { Categories } from "./subComponent/Categories";
 import { CurrencyTable } from "./subComponent/CurrencyTable";
 import ReactPaginate from "react-paginate";
 import style from  "./pagination.module.css"
+import { useCurrency } from "../../context/currencyContext";
 
 
 export const Main = () => {
+  const {getCurrencyData} = useCurrency();
   const handlePageClick = (data) => {
-    console.log(data.selected)
+    getCurrencyData(data.selected)
   };
 
   return (
@@ -35,7 +37,7 @@ export const Main = () => {
             previousClassName={style.pageItem}
             nextClassName={style.pageItem}
             breakClassName={style.pageItem}
-
+            activeClassName={style.active}
 
 
             />

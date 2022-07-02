@@ -8,7 +8,7 @@ function App() {
   const { getCurrencyData } = useCurrency();
   const { isModalOpen } = useModal();
   useEffect(() => {
-    getCurrencyData();
+    getCurrencyData(1);
   }, []);
   return (
     <>
