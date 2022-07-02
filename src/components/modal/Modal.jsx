@@ -52,7 +52,11 @@ export const Modal = () => {
           <th className={styles.tHead}>CIRCULATORY SUPPLY</th>
         </tr>
         <tr>
-        <td className={styles.tData}>  {modalData?.circulating_supply}BTC</td>
+        <td className={styles.tData}>  {modalData?.circulating_supply}BTC
+        <div className={styles.statusBar}>
+        <div className={styles.status}></div>
+      </div>
+        </td>
         </tr>
       </table>
     </div>

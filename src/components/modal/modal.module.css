@@ -45,4 +45,17 @@
         display: inline-block;
         margin:0 .4rem 0 0;
       }
+      .statusBar{
+        margin-top:.4rem;
+        width:10rem;
+        height:.5rem;
+        background-color: #f1f3f7;
+        border-radius: 8px;
+      }
+      .status{
+        width:80%;
+        height: .5rem;
+        background-color: #CFD6E4;
+        border-radius: 8px;
+      }
 }
